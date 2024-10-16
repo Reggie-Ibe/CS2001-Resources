@@ -9,16 +9,24 @@
     <body>
         <header></header>
         <nav>
+    
+                
+              
             <!-- ToDo: An unordered list to represent the menu, 
                        each list item should correspond to the menu items (Home, Register, Login, Help)
                        The css class of the menu is "navlist"
                        Check lecture slides about lists, an example of a more basic menu, and CSS class selector-->
             <ul class="navlist">
+            <li><a href="Home.asp">Home</a></li>
+            <li><a href="Register.asp">Register</a></li>
+            <li><a href="Login.asp">Login</a></li>
+            <li><a href="Help.asp">Help</a></li>
             </ul>
          </nav>
         <main>
             <!-- Check Week 2 Lecture to learn about HTML5 semantic elements-->
             <aside>
+                <input type="text" placeholder="Search..">
             </aside>
             <section>
                 <form class="center" novalidate>
@@ -33,11 +41,23 @@
                            and how to create a button that would react to a click Event
                         -->
                     <!-- Example given for user type checkboxes-->
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="password">Password:</label> <br>
+                    <input type="password" id="password" name="password" required><br>
+                    <label for="retype-password">Retype Password:</label><br>
+                    <input type="password" id="retype-password" name="retype_password" required><br>
                     
                     <input type="checkbox" id="buyer" name="buyer" value="buyer">
                     <label for="buyer">I want to buy produce directly from allotment owners.</label><br>
                     <input type="checkbox" id="seller" name="seller" value="seller">
                     <label for="seller">I want to sell produce from my allotment.</label><br><br>
+                    <input type="checkbox" id="Terms" name="Terms" value="Terms">
+                    <label for="Terms">I agree to <a href="http://">Terms of Use</a> and <a href="http://">Privacy Policy</a></label><br><br>
+                   
+                    <input type="submit" value="Register">
 
                     <br><br>
                 </form>
